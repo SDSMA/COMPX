@@ -1,0 +1,16 @@
+Main menu form stays open all the time. This form will contain all of the Form Change navigation buttons.
+To use the new items:
+- In Solution Explorer, right click the AdvancedHMI project and select Properties
+- Under the application tab change the Startup Form to MainMenu
+
+Create new forms. Set the FormBorderStyle to None for all forms. 
+After creating additional forms and Building the project, add menu buttons for them:
+	- In Solution Explorer, expand down the AdvancedHMI project, then expand down to FormChangeControls\MainMenuDriven
+	- Double the MainMenu.vb to open in Design View
+	- From the Toolbox add a MainMenuButton for each new form
+	- Set the FormToOpen property
+	- You can also set the OpenOnStartup property for one button to indicate the default startup form
+
+On the MainMenu is an Exit button. This button searches for hidden forms to ensure they are properly disposed when closing an application.
+
+Main Menu form can also be used for "global" style functions such as changing forms based on a PLC value since it stays open and will always keep PLC communications active.

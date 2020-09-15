@@ -1,0 +1,13 @@
+﻿'Create connection string
+Public Class ClassConnectionBuilder
+    Public Shared Function ConnectionStringBuilder(ByRef Server As String, ByRef database As String,
+                                                   ByRef userid As String, ByRef password As String) As String
+        Dim sqlConnString As New System.Data.SqlClient.SqlConnectionStringBuilder() With {
+            .DataSource = Server,
+            .InitialCatalog = database,
+            .UserID = userid,
+            .Password = password
+        }
+        Return sqlConnString.ConnectionString
+    End Function
+end class

@@ -1,0 +1,67 @@
+'A class to resize the controls on the form as the form resizes
+'http://www.freevbcode.com/ShowCode.asp?ID=2405
+
+Private frmForm As Form
+Private ctrlHeight As Integer
+Private ctrlWidth As Integer
+Private frmScaleHeight As Integer
+Private frmScaleWidth As Integer
+Private ctrlControls As New Collection
+Private ctrlTopCollection As New Collection
+Private ctrlLeftCollection As New Collection
+
+Public Sub SendForm(frm As Object, ScaleHeight As Integer, ScaleWidth As Integer)
+    Set frmForm = frm
+    frmScaleHeight = ScaleHeight
+    frmScaleWidth = ScaleWidth
+End Sub
+
+Public Sub SendControl(Ctrl As Control, Optional Top As Variant, Optional left As Variant)
+    'Adding the control in the Controls Collection
+    ctrlControls.Add Ctrl
+    
+    If IsMissing(Top) Then
+        ctrlTopCollection.Add -1
+    Else
+        ctrlTopCollection.Add Top
+    End If
+    
+    If IsMissing(left) Then
+        ctrlLeftCollection.Add -1
+    Else
+        ctrlLeftCollection.Add left
+    End If
+    
+End Sub
+
+Public Sub ResizeControls()
+Dim cnt As Integer
+    For cnt = 1 To ctrlControls.Count
+        If ctrlTopCollection.Item(cnt) >= 0 Then
+            Call ChangeHeight(ctrlControls.Item(cnt), ctrlTopCollection.Item(cnt))
+        End If
+        If ctrlLeftCollection.Item(cnt) >= 0 Then
+            Call ChangeWidth(ctrlControls.Item(cnt), ctrlLeftCollection.Item(cnt))
+        End If
+    Next cnt
+End Sub
+
+Private Sub ChangeHeight(ctrlControl As Control, ctrlTop As Integer)
+Dim Ctrl As Control
+    ctrlHeight = frmScaleHeight - ctrlTop - 100
+    For Each Ctrl In frmForm.Controls
+        If Ctrl Is ctrlControl Then
+            Ctrl.Height = ctrlHeight
+        End If
+    Next
+End Sub
+
+Private Sub ChangeWidth(ctrlControl As Control, ctrlLeft As Integer)
+Dim Ctrl As Control
+    ctrlWidth = frmScaleWidth - ctrlLeft - 100
+    For Each Ctrl In frmForm.Controls
+        If Ctrl Is ctrlControl Then
+            Ctrl.Width = ctrlWidth
+        End If
+    Next
+End Sub

@@ -1,0 +1,47 @@
+﻿   '==========================================================================
+    'import data from excel to datagridview
+    'https://social.msdn.microsoft.com/Forums/en-US/8b71e730-f93e-4ca7-aef6-8391417c4e13/how-to-import-data-from-excel-sheet-in-data-grid-view-using-vbnet?forum=netfx64bit
+    'https://www.youtube.com/watch?v=UyDSGkjOB6E
+    'https://www.youtube.com/watch?v=O3a4BJEC5Bg
+    'https://www.youtube.com/watch?v=ssvq9nji5Y8
+    'https://stackoverflow.com/questions/37942305/importing-excel-data-in-datagridview-using-vb-net
+
+    '==========================================================================
+    'Imports System.Data.SqlClient
+    'Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+    '    Dim MyConnection As System.Data.OleDb.OleDbConnection
+    '    Dim DtSet As System.Data.DataSet
+    '    Dim MyCommand As System.Data.OleDb.OleDbDataAdapter
+    '    MyConnection = New System.Data.OleDb.OleDbConnection("provider=Microsoft.Jet.OLEDB.4.0;Data Source='c:\vb.net-informations.xls';Extended Properties=Excel 8.0;")
+    '    MyCommand = New System.Data.OleDb.OleDbDataAdapter("select * from [Sheet1$]", MyConnection)
+    '    MyCommand.TableMappings.Add("Table", "Net-informations.com")
+    '    DtSet = New System.Data.DataSet
+    '    MyCommand.Fill(DtSet)
+    '    DataGridView1.DataSource = DtSet.Tables(0)
+    '    MyConnection.Close()
+    'End Sub
+
+    '==========================================================================
+    'Open the excel file in excel application and get all the work sheet names and return it as array
+    'get all excel worksheet names
+    'untested
+    'Calling convention:
+    '   Dim arrList As ArrayList = getExcelSheetsName(Excel)
+    '   get the first sheet name and add the sign $ to it
+    '   Dim sheetName As String = "[" + arrList(0) + "$]"
+    '==========================================================================
+    Private Function getExcelSheetsName(ByVal Excelfilename As String) As ArrayList
+        Dim objExcel As Excel.Application
+        Dim objWorkBook As Excel.Workbook
+        Dim objWorkSheets As Excel.Worksheet
+        Dim SheetList As New ArrayList
+        objExcel = CreateObject("Excel.Application")
+        objWorkBook = objExcel.Workbooks.Open(Excelfilename)
+        For Each objWorkSheets In objWorkBook.Worksheets
+            SheetList.Add(objWorkSheets.Name)
+            ' ListBox1.Items.Add(objWorkSheets.Name)
+        Next
+        'End_Excel_App()
+        Return SheetList
+    End Function

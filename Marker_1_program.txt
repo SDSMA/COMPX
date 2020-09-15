@@ -1,0 +1,17 @@
+PB 001, startprogram 1
+UU1, Metric
+O, origin
+AJ, downstroke
+MN, normal mode
+CC100, downstroke
+TA20, character size
+J2, forcecode
+PO2, font
+SC70, interchacter spacing
+M 280 242, movement
+MC260 264 93 900 2 2 1 1 100, Marking angle
+CA, Marking angle
+DF99:(V0), format config variable 0
+MD 99, date format
+O, return to origin
+PE 001, end program 1

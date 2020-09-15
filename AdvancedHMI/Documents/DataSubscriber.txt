@@ -1,0 +1,45 @@
+https://advancedhmi.com/documentation/index.php?title=Configuring_a_DataSubscriber2_with_a_CSV_file
+Using a Comma Separated Text File to Configure a DataSubscriber2
+This walk-through will show how to configure the list of PLCAddressVaueItems in a DataSubscriber using a text file.
+
+1) In Solution Explorer, right click the AdvancedHMI project and select Add->New Item
+2) From the list select Text File
+3) Name the text file MyConfigFile.txt and click the Add button
+4) In Solution Explorer, click the new file once to select it
+5) In the Properties Window change Copy To Output Directory to Copy If Newer
+6) In Solution Explorer double click the file to edit
+7) Add these lines to the file:
+		DINTTag,1,0
+		LINTTag,1,0
+
+8) In Solution Explorer under the AdvancedHMI project, double click MainForm to show design view
+9) From the Toolbox ad a DataSubscriber2
+10) Double click on a blank area of the MainForm to get to the FormLoad event handler
+11) Add this code:
+       '* Start initializing the Datasubscriber to prevent subscribing until all items added
+       DataSubscriber21.BeginInit()
+       '* Open the configuration file
+       Using sw As New System.IO.StreamReader("MyConfigFile.txt")
+           Dim LineFromFile As String
+           Dim Settings() As String
+           Dim NewPLCAddressItem As MfgControl.AdvancedHMI.Drivers.PLCAddressItem
+           While Not sw.EndOfStream
+               '* Read a line from the file
+               LineFromFile = sw.ReadLine
+               '* Split into comma separated items
+               Settings = LineFromFile.Split(",")
+               '* Create a new PLCAddresItem to setup and add to the list
+               NewPLCAddressItem = New MfgControl.AdvancedHMI.Drivers.PLCAddressItem
+               NewPLCAddressItem.PLCAddress = Settings(0)
+               If Settings.Length > 1 Then
+                   NewPLCAddressItem.ScaleFactor = CDbl(Settings(1))
+               End If
+               If Settings.Length > 2 Then
+                   NewPLCAddressItem.ScaleOffset = CDbl(Settings(2))
+               End If
+               '* Add the new item to the datasubscriber
+               DataSubscriber21.PLCAddressValueItems.Add(NewPLCAddressItem)
+           End While
+       End Using
+       '* Allow the Datasubscriber to proceed
+       DataSubscriber21.EndInit()

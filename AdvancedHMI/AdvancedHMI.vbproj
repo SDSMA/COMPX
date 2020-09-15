@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13A180B0-1183-4CB7-AC14-BF98320A30E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MfgControl.AdvancedHMI.My.MyApplication</StartupObject>
+    <RootNamespace>MfgControl.AdvancedHMI</RootNamespace>
+    <AssemblyName>CompX</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OptionExplicit>Off</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CompX.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CompX.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>Migrated rules for AdvancedHMI.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MfgControl.AdvancedHMI.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AdvancedHMIControls\support\MfgControl.AdvancedHMI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="MfgControl.AdvancedHMI.Drivers, Version=3.99.19.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AdvancedHMIDrivers\Support\MfgControl.AdvancedHMI.Drivers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Binaries\Microsoft.Data.ConnectionUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Binaries\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.DataConnectionConfiguration">
+      <HintPath>Binaries\Microsoft.Data.DataConnectionConfiguration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BotTumbler_Form.Designer.vb">
+      <DependentUpon>BotTumbler_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BotTumbler_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChartsForm.Designer.vb">
+      <DependentUpon>ChartsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChartsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bushing_Form.Designer.vb">
+      <DependentUpon>Bushing_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bushing_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barrel_Form.Designer.vb">
+      <DependentUpon>Barrel_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Barrel_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marker_Sequence.vb" />
+    <Compile Include="Password_Form.Designer.vb">
+      <DependentUpon>Password_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Password_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecipeVerify_Form.Designer.vb">
+      <DependentUpon>RecipeVerify_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecipeVerify_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipe_Module.vb" />
+    <Compile Include="Markers_Form.Designer.vb">
+      <DependentUpon>Markers_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Markers_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wait_Form.Designer.vb">
+      <DependentUpon>Wait_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wait_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkerComms.vb" />
+    <Compile Include="PLC_Comms.vb" />
+    <Compile Include="DrillPin_Form.Designer.vb">
+      <DependentUpon>DrillPin_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DrillPin_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operations.vb" />
+    <Compile Include="RecipeDisplayForm.Designer.vb">
+      <DependentUpon>RecipeDisplayForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecipeDisplayForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Sta16_Form.Designer.vb">
+      <DependentUpon>Sta16_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sta16_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sta15_Form.Designer.vb">
+      <DependentUpon>Sta15_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sta15_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sta9_Form.Designer.vb">
+      <DependentUpon>Sta9_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sta9_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sta3_Form.Designer.vb">
+      <DependentUpon>Sta3_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sta3_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopSleeve_Form.Designer.vb">
+      <DependentUpon>TopSleeve_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TopSleeve_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sta2_Form.Designer.vb">
+      <DependentUpon>Sta2_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sta2_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopTumbler_Form.Designer.vb">
+      <DependentUpon>TopTumbler_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TopTumbler_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Springs_Form.Designer.vb">
+      <DependentUpon>Springs_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Springs_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KnurlPin_Form.Designer.vb">
+      <DependentUpon>KnurlPin_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KnurlPin_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MidTumbler_Form.Designer.vb">
+      <DependentUpon>MidTumbler_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MidTumbler_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sta14_Form.Designer.vb">
+      <DependentUpon>Sta14_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sta14_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sta13_Form.Designer.vb">
+      <DependentUpon>Sta13_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sta13_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help_Form.Designer.vb">
+      <DependentUpon>Help_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TumblerKitForm.Designer.vb">
+      <DependentUpon>TumblerKitForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TumblerKitForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.vb">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keyfile_Form.Designer.vb">
+      <DependentUpon>Keyfile_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Keyfile_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="NCLRecipeDataSet.vb">
+      <DependentUpon>NCLRecipeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Verify_Recipe.Designer.vb">
+      <DependentUpon>Verify_Recipe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Verify_Recipe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverviewForm.Designer.vb">
+      <DependentUpon>OverviewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OverviewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangeControls\FormChangeButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormChangeControls\FormChangeImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormChangeControls\MainMenuDriven\MainMenu.designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangeControls\MainMenuDriven\MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangeControls\MainMenuDriven\MainMenuButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NCLRecipeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NCLRecipeDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BotTumbler_Form.resx">
+      <DependentUpon>BotTumbler_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartsForm.resx">
+      <DependentUpon>ChartsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bushing_Form.resx">
+      <DependentUpon>Bushing_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barrel_Form.resx">
+      <DependentUpon>Barrel_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrillPin_Form.resx">
+      <DependentUpon>DrillPin_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Markers_Form.resx">
+      <DependentUpon>Markers_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipeVerify_Form.resx">
+      <DependentUpon>RecipeVerify_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wait_Form.resx">
+      <DependentUpon>Wait_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipeDisplayForm.resx">
+      <DependentUpon>RecipeDisplayForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sta16_Form.resx">
+      <DependentUpon>Sta16_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sta15_Form.resx">
+      <DependentUpon>Sta15_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sta9_Form.resx">
+      <DependentUpon>Sta9_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sta3_Form.resx">
+      <DependentUpon>Sta3_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopSleeve_Form.resx">
+      <DependentUpon>TopSleeve_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sta2_Form.resx">
+      <DependentUpon>Sta2_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopTumbler_Form.resx">
+      <DependentUpon>TopTumbler_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Springs_Form.resx">
+      <DependentUpon>Springs_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KnurlPin_Form.resx">
+      <DependentUpon>KnurlPin_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidTumbler_Form.resx">
+      <DependentUpon>MidTumbler_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sta14_Form.resx">
+      <DependentUpon>Sta14_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sta13_Form.resx">
+      <DependentUpon>Sta13_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help_Form.resx">
+      <DependentUpon>Help_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TumblerKitForm.resx">
+      <DependentUpon>TumblerKitForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keyfile_Form.resx">
+      <DependentUpon>Keyfile_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverviewForm.resx">
+      <DependentUpon>OverviewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangeControls\MainMenuDriven\MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verify_Recipe.resx">
+      <DependentUpon>Verify_Recipe.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Documents\OpcDaComUage.pdf" />
+    <None Include="NCLRecipeDataSet.xsc">
+      <DependentUpon>NCLRecipeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NCLRecipeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NCLRecipeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NCLRecipeDataSet.xss">
+      <DependentUpon>NCLRecipeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SampleINIfiles\CLX.ini" />
+    <None Include="SampleINIfiles\TC.ini" />
+    <None Include="Documents\ICommComponentInterface.pdf" />
+    <None Include="Documents\MatrikonSimulator.pdf" />
+    <None Include="Documents\MotorControlAppMicroLogix.pdf" />
+    <None Include="Documents\QuickStart.pdf" />
+    <None Include="Documents\TwinCATDriverSetting.pdf" />
+    <None Include="Documents\UsingAdvancedHMIwithRSLogixEmulator500.pdf" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="QuickStart.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Binaries\Microsoft.Data.ConnectionUI.Dialog.dll" />
+    <Content Include="Binaries\Microsoft.Data.ConnectionUI.Dialog.pdb" />
+    <Content Include="Binaries\Microsoft.Data.ConnectionUI.dll" />
+    <Content Include="Binaries\Microsoft.Data.ConnectionUI.pdb" />
+    <Content Include="Binaries\Microsoft.Data.DataConnectionConfiguration.dll" />
+    <Content Include="Binaries\Microsoft.Data.DataConnectionConfiguration.pdb" />
+    <Content Include="Documents\Data connection string.txt" />
+    <Content Include="Documents\Excel and DGV.txt" />
+    <Content Include="Documents\TextFile1.txt" />
+    <Content Include="Documents\vb detect Excel click.txt" />
+    <Content Include="Documents\vb Send keystrokes to Excel.txt" />
+    <Content Include="Documents\vb working with Excel.txt" />
+    <Content Include="icons\AHMI00.ico" />
+    <Content Include="icons\AHMI01.ico" />
+    <Content Include="icons\AHMI03.ico" />
+    <Content Include="icons\AHMI04.ico" />
+    <Content Include="icons\AHMI09.ico" />
+    <Content Include="icons\AHMI11.ico" />
+    <Content Include="icons\AHMI13.ico" />
+    <Content Include="icons\AHMI14.ico" />
+    <Content Include="icons\AHMI32x32-1.ico" />
+    <Content Include="icons\AHMI32x32-2.ico" />
+    <Content Include="icons\AHMI32x32-3.ico" />
+    <Content Include="icons\AHMI32x32-4.ico" />
+    <Content Include="icons\Credit.txt" />
+    <Content Include="SampleINIfiles\Alarms.txt" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="ReleaseNotes399.txt" />
+    <None Include="Resources\AdvancedHMILogoBR.png" />
+    <Content Include="UsageAndLicense.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDASC">
+      <Guid>{2206CEB0-19C1-11D1-89E0-00C04FD7A829}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdvancedHMIControls\AdvancedHMIControls.vbproj">
+      <Project>{928F9169-93D6-4E5F-8130-C8B1F4D3CC6E}</Project>
+      <Name>AdvancedHMIControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdvancedHMIDrivers\AdvancedHMIDrivers.vbproj">
+      <Project>{1C35364C-105A-4537-9CA1-0FB0DC656944}</Project>
+      <Name>AdvancedHMIDrivers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

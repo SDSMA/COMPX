@@ -1,0 +1,1588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 948</value>
+  </data>
+  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 50</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="Button1.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="Label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 18</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 18</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Actual</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>Quantity_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 19</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 18</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>Quantity_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="MainMenu_Timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>556, 17</value>
+  </metadata>
+  <data name="ComboBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="ComboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 737</value>
+  </data>
+  <data name="ComboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 26</value>
+  </data>
+  <data name="ComboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>168</value>
+  </data>
+  <data name="&gt;&gt;ComboBox1.Name" xml:space="preserve">
+    <value>ComboBox1</value>
+  </data>
+  <data name="&gt;&gt;ComboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBox1.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ComboBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="ComboBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 737</value>
+  </data>
+  <data name="ComboBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 24</value>
+  </data>
+  <data name="ComboBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>169</value>
+  </data>
+  <data name="&gt;&gt;ComboBox2.Name" xml:space="preserve">
+    <value>ComboBox2</value>
+  </data>
+  <data name="&gt;&gt;ComboBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBox2.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="Open_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Open_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Open_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 761</value>
+  </data>
+  <data name="Open_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 46</value>
+  </data>
+  <data name="Open_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="Open_Button.Text" xml:space="preserve">
+    <value>Open Form</value>
+  </data>
+  <data name="&gt;&gt;Open_Button.Name" xml:space="preserve">
+    <value>Open_Button</value>
+  </data>
+  <data name="&gt;&gt;Open_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Open_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Open_Button.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Close_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Close_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Close_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 761</value>
+  </data>
+  <data name="Close_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 46</value>
+  </data>
+  <data name="Close_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>171</value>
+  </data>
+  <data name="Close_Button.Text" xml:space="preserve">
+    <value>Close Form</value>
+  </data>
+  <data name="&gt;&gt;Close_Button.Name" xml:space="preserve">
+    <value>Close_Button</value>
+  </data>
+  <data name="&gt;&gt;Close_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Close_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Close_Button.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <metadata name="EthernetIPforCLXCom1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="A_25_Recipe_Batch_Key_Que_PLC.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="A_25_Recipe_Batch_Key_Que_PLC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="A_25_Recipe_Batch_Key_Que_PLC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 39</value>
+  </data>
+  <assembly alias="MfgControl.AdvancedHMI.Drivers" name="MfgControl.AdvancedHMI.Drivers, Version=3.99.19.2, Culture=neutral, PublicKeyToken=null" />
+  <data name="A_25_Recipe_Batch_Key_Que_PLC.PLCAddressValue" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_25_Recipe_Batch_Key_Que</value>
+  </data>
+  <data name="A_25_Recipe_Batch_Key_Que_PLC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 30</value>
+  </data>
+  <data name="A_25_Recipe_Batch_Key_Que_PLC.TabIndex" type="System.Int32, mscorlib">
+    <value>205</value>
+  </data>
+  <data name="A_25_Recipe_Batch_Key_Que_PLC.Text" xml:space="preserve">
+    <value>0000</value>
+  </data>
+  <data name="A_25_Recipe_Batch_Key_Que_PLC.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;A_25_Recipe_Batch_Key_Que_PLC.Name" xml:space="preserve">
+    <value>A_25_Recipe_Batch_Key_Que_PLC</value>
+  </data>
+  <data name="&gt;&gt;A_25_Recipe_Batch_Key_Que_PLC.Type" xml:space="preserve">
+    <value>AdvancedHMIControls.AnalogValueDisplay, AdvancedHMIControls, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;A_25_Recipe_Batch_Key_Que_PLC.Parent" xml:space="preserve">
+    <value>Quantity_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;A_25_Recipe_Batch_Key_Que_PLC.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PLC_Request_Data_BasicLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="PLC_Request_Data_BasicLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="PLC_Request_Data_BasicLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PLC_Request_Data_BasicLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 73</value>
+  </data>
+  <data name="PLC_Request_Data_BasicLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 16</value>
+  </data>
+  <data name="PLC_Request_Data_BasicLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>211</value>
+  </data>
+  <data name="PLC_Request_Data_BasicLabel.Text" xml:space="preserve">
+    <value>PLC Req Data</value>
+  </data>
+  <data name="PLC_Request_Data_BasicLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;PLC_Request_Data_BasicLabel.Name" xml:space="preserve">
+    <value>PLC_Request_Data_BasicLabel</value>
+  </data>
+  <data name="&gt;&gt;PLC_Request_Data_BasicLabel.Type" xml:space="preserve">
+    <value>AdvancedHMIControls.BasicLabel, AdvancedHMIControls, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PLC_Request_Data_BasicLabel.Parent" xml:space="preserve">
+    <value>Quantity_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;PLC_Request_Data_BasicLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A_24_Recipe_Batch_Quantity_PLC.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="A_24_Recipe_Batch_Quantity_PLC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="A_24_Recipe_Batch_Quantity_PLC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 39</value>
+  </data>
+  <data name="A_24_Recipe_Batch_Quantity_PLC.PLCAddressValue" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_24_Recipe_Batch_Quantity</value>
+  </data>
+  <data name="A_24_Recipe_Batch_Quantity_PLC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 30</value>
+  </data>
+  <data name="A_24_Recipe_Batch_Quantity_PLC.TabIndex" type="System.Int32, mscorlib">
+    <value>204</value>
+  </data>
+  <data name="A_24_Recipe_Batch_Quantity_PLC.Text" xml:space="preserve">
+    <value>0000</value>
+  </data>
+  <data name="A_24_Recipe_Batch_Quantity_PLC.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;A_24_Recipe_Batch_Quantity_PLC.Name" xml:space="preserve">
+    <value>A_24_Recipe_Batch_Quantity_PLC</value>
+  </data>
+  <data name="&gt;&gt;A_24_Recipe_Batch_Quantity_PLC.Type" xml:space="preserve">
+    <value>AdvancedHMIControls.AnalogValueDisplay, AdvancedHMIControls, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;A_24_Recipe_Batch_Quantity_PLC.Parent" xml:space="preserve">
+    <value>Quantity_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;A_24_Recipe_Batch_Quantity_PLC.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 45</value>
+  </data>
+  <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 20</value>
+  </data>
+  <data name="Label8.TabIndex" type="System.Int32, mscorlib">
+    <value>203</value>
+  </data>
+  <data name="Label8.Text" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
+    <value>Label8</value>
+  </data>
+  <data name="&gt;&gt;Label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
+    <value>Quantity_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Quantity_GroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Quantity_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 7</value>
+  </data>
+  <data name="Quantity_GroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="Quantity_GroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="Quantity_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 94</value>
+  </data>
+  <data name="Quantity_GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>197</value>
+  </data>
+  <data name="Quantity_GroupBox.Text" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="&gt;&gt;Quantity_GroupBox.Name" xml:space="preserve">
+    <value>Quantity_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;Quantity_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Quantity_GroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Quantity_GroupBox.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="Marker_1_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Marker_1_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Marker_1_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 405</value>
+  </data>
+  <data name="Marker_1_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 50</value>
+  </data>
+  <data name="Marker_1_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>198</value>
+  </data>
+  <data name="Marker_1_Button.Text" xml:space="preserve">
+    <value>Marker Sta 14</value>
+  </data>
+  <data name="&gt;&gt;Marker_1_Button.Name" xml:space="preserve">
+    <value>Marker_1_Button</value>
+  </data>
+  <data name="&gt;&gt;Marker_1_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Marker_1_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Marker_1_Button.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="KeyFile_Form_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="KeyFile_Form_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="KeyFile_Form_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 275</value>
+  </data>
+  <data name="KeyFile_Form_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 50</value>
+  </data>
+  <data name="KeyFile_Form_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>199</value>
+  </data>
+  <data name="KeyFile_Form_Button.Text" xml:space="preserve">
+    <value>Key File</value>
+  </data>
+  <data name="&gt;&gt;KeyFile_Form_Button.Name" xml:space="preserve">
+    <value>KeyFile_Form_Button</value>
+  </data>
+  <data name="&gt;&gt;KeyFile_Form_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KeyFile_Form_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;KeyFile_Form_Button.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="MainMenu_Timer_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="MainMenu_Timer_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MainMenu_Timer_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 517</value>
+  </data>
+  <data name="MainMenu_Timer_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 32</value>
+  </data>
+  <data name="MainMenu_Timer_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>202</value>
+  </data>
+  <data name="MainMenu_Timer_Button.Text" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_Timer_Button.Name" xml:space="preserve">
+    <value>MainMenu_Timer_Button</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_Timer_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_Timer_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_Timer_Button.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="User_Access_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="User_Access_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="User_Access_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 809</value>
+  </data>
+  <data name="User_Access_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 50</value>
+  </data>
+  <data name="User_Access_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>203</value>
+  </data>
+  <data name="User_Access_Button.Text" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="&gt;&gt;User_Access_Button.Name" xml:space="preserve">
+    <value>User_Access_Button</value>
+  </data>
+  <data name="&gt;&gt;User_Access_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;User_Access_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;User_Access_Button.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <metadata name="Permission_Timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1164, 17</value>
+  </metadata>
+  <metadata name="Modify_Access_Timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1331, 21</value>
+  </metadata>
+  <data name="Marker_2_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Marker_2_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Marker_2_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 461</value>
+  </data>
+  <data name="Marker_2_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 50</value>
+  </data>
+  <data name="Marker_2_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>204</value>
+  </data>
+  <data name="Marker_2_Button.Text" xml:space="preserve">
+    <value>Marker Sta 17</value>
+  </data>
+  <data name="&gt;&gt;Marker_2_Button.Name" xml:space="preserve">
+    <value>Marker_2_Button</value>
+  </data>
+  <data name="&gt;&gt;Marker_2_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Marker_2_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Marker_2_Button.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="User_Permission_TextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="User_Permission_TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 859</value>
+  </data>
+  <data name="User_Permission_TextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="User_Permission_TextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="User_Permission_TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 31</value>
+  </data>
+  <data name="User_Permission_TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>205</value>
+  </data>
+  <data name="User_Permission_TextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;User_Permission_TextBox.Name" xml:space="preserve">
+    <value>User_Permission_TextBox</value>
+  </data>
+  <data name="&gt;&gt;User_Permission_TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;User_Permission_TextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;User_Permission_TextBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ComboBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="ComboBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 653</value>
+  </data>
+  <data name="ComboBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 26</value>
+  </data>
+  <data name="ComboBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>206</value>
+  </data>
+  <data name="&gt;&gt;ComboBox3.Name" xml:space="preserve">
+    <value>ComboBox3</value>
+  </data>
+  <data name="&gt;&gt;ComboBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBox3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 53</value>
+  </data>
+  <data name="Label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 20</value>
+  </data>
+  <data name="Label10.TabIndex" type="System.Int32, mscorlib">
+    <value>202</value>
+  </data>
+  <data name="Label10.Text" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="&gt;&gt;Label10.Name" xml:space="preserve">
+    <value>Label10</value>
+  </data>
+  <data name="&gt;&gt;Label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label10.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="TextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 49</value>
+  </data>
+  <data name="TextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="TextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="TextBox1.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;TextBox1.Name" xml:space="preserve">
+    <value>TextBox1</value>
+  </data>
+  <data name="&gt;&gt;TextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBox1.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;TextBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="Label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 28</value>
+  </data>
+  <data name="Label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 18</value>
+  </data>
+  <data name="Label12.TabIndex" type="System.Int32, mscorlib">
+    <value>195</value>
+  </data>
+  <data name="Label12.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="&gt;&gt;Label12.Name" xml:space="preserve">
+    <value>Label12</value>
+  </data>
+  <data name="&gt;&gt;Label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label12.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label12.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="Label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 28</value>
+  </data>
+  <data name="Label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 18</value>
+  </data>
+  <data name="Label14.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="Label14.Text" xml:space="preserve">
+    <value>WorkFile</value>
+  </data>
+  <data name="&gt;&gt;Label14.Name" xml:space="preserve">
+    <value>Label14</value>
+  </data>
+  <data name="&gt;&gt;Label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label14.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label14.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TextBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="TextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 49</value>
+  </data>
+  <data name="TextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="TextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="TextBox2.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;TextBox2.Name" xml:space="preserve">
+    <value>TextBox2</value>
+  </data>
+  <data name="&gt;&gt;TextBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBox2.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;TextBox2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="GroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 94</value>
+  </data>
+  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 83</value>
+  </data>
+  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>206</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Machine_Mode_Display.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="Machine_Mode_Display.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Machine_Mode_Display.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 198</value>
+  </data>
+  <data name="Machine_Mode_Display.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 18</value>
+  </data>
+  <data name="Machine_Mode_Display.TabIndex" type="System.Int32, mscorlib">
+    <value>203</value>
+  </data>
+  <data name="Machine_Mode_Display.Text" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+  <data name="Machine_Mode_Display.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;Machine_Mode_Display.Name" xml:space="preserve">
+    <value>Machine_Mode_Display</value>
+  </data>
+  <data name="&gt;&gt;Machine_Mode_Display.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Machine_Mode_Display.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Machine_Mode_Display.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Recipe_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Recipe_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Recipe_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 219</value>
+  </data>
+  <data name="Recipe_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 50</value>
+  </data>
+  <data name="Recipe_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>208</value>
+  </data>
+  <data name="Recipe_Button.Text" xml:space="preserve">
+    <value>Recipe</value>
+  </data>
+  <data name="&gt;&gt;Recipe_Button.Name" xml:space="preserve">
+    <value>Recipe_Button</value>
+  </data>
+  <data name="&gt;&gt;Recipe_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Recipe_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Recipe_Button.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Tumblers_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Tumblers_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Tumblers_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 349</value>
+  </data>
+  <data name="Tumblers_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 50</value>
+  </data>
+  <data name="Tumblers_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>211</value>
+  </data>
+  <data name="Tumblers_Button.Text" xml:space="preserve">
+    <value>Tumblers</value>
+  </data>
+  <data name="&gt;&gt;Tumblers_Button.Name" xml:space="preserve">
+    <value>Tumblers_Button</value>
+  </data>
+  <data name="&gt;&gt;Tumblers_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Tumblers_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Tumblers_Button.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="PLC_Comms_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="PLC_Comms_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PLC_Comms_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 180</value>
+  </data>
+  <data name="PLC_Comms_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 18</value>
+  </data>
+  <data name="PLC_Comms_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>213</value>
+  </data>
+  <data name="PLC_Comms_Label.Text" xml:space="preserve">
+    <value>PLC Comms</value>
+  </data>
+  <data name="PLC_Comms_Label.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;PLC_Comms_Label.Name" xml:space="preserve">
+    <value>PLC_Comms_Label</value>
+  </data>
+  <data name="&gt;&gt;PLC_Comms_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PLC_Comms_Label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PLC_Comms_Label.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="OpenForm_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="OpenForm_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="OpenForm_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 685</value>
+  </data>
+  <data name="OpenForm_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 46</value>
+  </data>
+  <data name="OpenForm_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>214</value>
+  </data>
+  <data name="OpenForm_Button.Text" xml:space="preserve">
+    <value>Open Form</value>
+  </data>
+  <data name="&gt;&gt;OpenForm_Button.Name" xml:space="preserve">
+    <value>OpenForm_Button</value>
+  </data>
+  <data name="&gt;&gt;OpenForm_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OpenForm_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;OpenForm_Button.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Sta17_Start_Print_BasicLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Sta17_Start_Print_BasicLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Sta17_Start_Print_BasicLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 441</value>
+  </data>
+  <data name="Sta17_Start_Print_BasicLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 30</value>
+  </data>
+  <data name="Sta17_Start_Print_BasicLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>210</value>
+  </data>
+  <data name="Sta17_Start_Print_BasicLabel.Text" xml:space="preserve">
+    <value>Sta17 Print</value>
+  </data>
+  <data name="Sta17_Start_Print_BasicLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;Sta17_Start_Print_BasicLabel.Name" xml:space="preserve">
+    <value>Sta17_Start_Print_BasicLabel</value>
+  </data>
+  <data name="&gt;&gt;Sta17_Start_Print_BasicLabel.Type" xml:space="preserve">
+    <value>AdvancedHMIControls.BasicLabel, AdvancedHMIControls, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Sta17_Start_Print_BasicLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Sta17_Start_Print_BasicLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Sta14_Start_Print_BasicLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Sta14_Start_Print_BasicLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Sta14_Start_Print_BasicLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 385</value>
+  </data>
+  <data name="Sta14_Start_Print_BasicLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 30</value>
+  </data>
+  <data name="Sta14_Start_Print_BasicLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>209</value>
+  </data>
+  <data name="Sta14_Start_Print_BasicLabel.Text" xml:space="preserve">
+    <value>Sta14 Print</value>
+  </data>
+  <data name="Sta14_Start_Print_BasicLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;Sta14_Start_Print_BasicLabel.Name" xml:space="preserve">
+    <value>Sta14_Start_Print_BasicLabel</value>
+  </data>
+  <data name="&gt;&gt;Sta14_Start_Print_BasicLabel.Type" xml:space="preserve">
+    <value>AdvancedHMIControls.BasicLabel, AdvancedHMIControls, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Sta14_Start_Print_BasicLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Sta14_Start_Print_BasicLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Machine_Mode_PLC.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="Machine_Mode_PLC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Machine_Mode_PLC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 198</value>
+  </data>
+  <data name="Machine_Mode_PLC.PLCAddressValue" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>Machine_Mode</value>
+  </data>
+  <data name="Machine_Mode_PLC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 18</value>
+  </data>
+  <data name="Machine_Mode_PLC.TabIndex" type="System.Int32, mscorlib">
+    <value>206</value>
+  </data>
+  <data name="Machine_Mode_PLC.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Machine_Mode_PLC.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;Machine_Mode_PLC.Name" xml:space="preserve">
+    <value>Machine_Mode_PLC</value>
+  </data>
+  <data name="&gt;&gt;Machine_Mode_PLC.Type" xml:space="preserve">
+    <value>AdvancedHMIControls.AnalogValueDisplay, AdvancedHMIControls, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Machine_Mode_PLC.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Machine_Mode_PLC.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <metadata name="Marker_DataSubscriber.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>702, 17</value>
+  </metadata>
+  <data name="Marker_DataSubscriber.PLCAddressValueItems" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>Sta14_Print_Data_Sent,1,Sta14_Print_Data_Sent,,1,0</value>
+  </data>
+  <data name="Marker_DataSubscriber.PLCAddressValueItems1" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>Sta17_Print_Data_Sent,1,Sta17_Print_Data_Sent,,1,0</value>
+  </data>
+  <data name="Marker_DataSubscriber.PLCAddressValueItems2" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>Sta14_Print_Done,1,Sta14_Print_Done,,1,0</value>
+  </data>
+  <data name="Marker_DataSubscriber.PLCAddressValueItems3" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>Sta17_Print_Done,1,Sta17_Print_Done,,1,0</value>
+  </data>
+  <data name="Marker_DataSubscriber.PLCAddressValueItems4" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>Sta14_Print_Error,1,Sta14_Print_Error,,1,0</value>
+  </data>
+  <data name="Marker_DataSubscriber.PLCAddressValueItems5" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>Sta17_Print_Error,1,Sta17_Print_Error,,1,0</value>
+  </data>
+  <data name="Marker_DataSubscriber.PLCAddressValueItems6" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>sta14_Start_Technifor_Print,1,Sta14_Start_Technifor_Print,,1,0</value>
+  </data>
+  <data name="Marker_DataSubscriber.PLCAddressValueItems7" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>Sta17_Start_Technifor_Print,1,Sta17_Start_Technifor_Print,,1,0</value>
+  </data>
+  <metadata name="Recipe_DataSubscriber.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1017, 17</value>
+  </metadata>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_00_Recipe_Manual_Load_Keys,1,A_00_Recipe_Manual_Load_Keys_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems1" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_01_Recipe_Keyed_Alike,1,A_01_Recipe_Keyed_Alike_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems2" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_02_Recipe_Auto_Unload_at_Sta17,1,A_02_Recipe_Auto_Unload_at_Sta17_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems3" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_03_Recipe_Load_Flex_Ace_at_Sta02,1,A_03_Recipe_Load_Flex_Ace_at_Sta02_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems4" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_04_Recipe_Enable_Sta03,1,A_04_Recipe_Enable_Sta03_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems5" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_05_Recipe_Enable_Sta04,1,A_05_Recipe_Enable_Sta04_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems6" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_06_Recipe_Enable_Sta05,1,A_06_Recipe_Enable_Sta05_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems7" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_07_Recipe_Enable_Sta06,1,A_07_Recipe_Enable_Sta06_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems8" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_08_Recipe_Enable_Sta07,1,A_08_Recipe_Enable_Sta07_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems9" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_09_Recipe_Enable_Sta08,1,A_09_Recipe_Enable_Sta08_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems10" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_10_Recipe_Enable_Sta09,1,A_10_Recipe_Enable_Sta09_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems11" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_11_Recipe_Enable_Sta10,1,A_11_Recipe_Enable_Sta10_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems12" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_12_Recipe_Enable_Sta11,1,A_12_Recipe_Enable_Sta11_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems13" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_13_Recipe_Enable_Sta12,1,A_13_Recipe_Enable_Sta12_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems14" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_14_Recipe_Enable_Sta13,1,A_14_Recipe_Enable_Sta13_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems15" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_15_Recipe_Mark_Top_of_Barrel,1,A_15_Recipe_Mark_Top_of_Barrel_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems16" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_16_Recipe_Enable_Sta15,1,A_16_Recipe_Enable_Sta15_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems17" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_17_Recipe_Leave_key_in_After_Test,1,A_17_Recipe_Leave_key_in_After_Test_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems18" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_18_Recipe_Enable_Sta16,1,A_18_Recipe_Enable_Sta16_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems19" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_19_Recipe_Mark_Side_of_Barrel,1,A_19_Recipe_Mark_Side_of_Barrel_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems20" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_17_Recipe_Leave_key_in_After_Test,1,A_17_Recipe_Leave_key_in_After_Test_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems21" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_18_Recipe_Enable_Sta16,1,A_18_Recipe_Enable_Sta16_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems22" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_19_Recipe_Mark_Side_of_Barrel,1,A_19_Recipe_Mark_Side_of_Barrel_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems23" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_21_Recipe_KeyTest_Finish_Angle,1,A_21_Recipe_KeyTest_Finish_Angle_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems24" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_22_Recipe_KeyTest_Start_Angle,1,A_22_Recipe_KeyTest_Start_Angle_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems25" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_23_Recipe_KeyTest_Test_Angle,1,A_23_Recipe_KeyTest_Test_Angle_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems26" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_24_Recipe_Batch_Quantity,1,A_24_Recipe_Batch_Quantity_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems27" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>A_25_Recipe_Batch_Key_Que,1,A_25_Recipe_Batch_Key_Que_PLC,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems28" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>Request_PC_Data,1,Request_PC_Data,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems29" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>First_Recipe_Data,1,First_Recipe_Data,,1,0</value>
+  </data>
+  <data name="Recipe_DataSubscriber.PLCAddressValueItems30" type="MfgControl.AdvancedHMI.Drivers.PLCAddressItem, MfgControl.AdvancedHMI.Drivers">
+    <value>First_Recipe_Done,1,First_Recipe_Done,,1,0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>56</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 1000</value>
+  </data>
+  <data name="PLC_Comms_Enabled_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="PLC_Comms_Enabled_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PLC_Comms_Enabled_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 552</value>
+  </data>
+  <data name="PLC_Comms_Enabled_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 18</value>
+  </data>
+  <data name="PLC_Comms_Enabled_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>218</value>
+  </data>
+  <data name="PLC_Comms_Enabled_Label.Text" xml:space="preserve">
+    <value>PLC Comms</value>
+  </data>
+  <data name="PLC_Comms_Enabled_Label.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;PLC_Comms_Enabled_Label.Name" xml:space="preserve">
+    <value>PLC_Comms_Enabled_Label</value>
+  </data>
+  <data name="&gt;&gt;PLC_Comms_Enabled_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PLC_Comms_Enabled_Label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PLC_Comms_Enabled_Label.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Recipe_Download_Status_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="Recipe_Download_Status_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Recipe_Download_Status_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 263</value>
+  </data>
+  <data name="Recipe_Download_Status_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 18</value>
+  </data>
+  <data name="Recipe_Download_Status_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>217</value>
+  </data>
+  <data name="Recipe_Download_Status_Label.Text" xml:space="preserve">
+    <value>Recipe_Download status</value>
+  </data>
+  <data name="Recipe_Download_Status_Label.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;Recipe_Download_Status_Label.Name" xml:space="preserve">
+    <value>Recipe_Download_Status_Label</value>
+  </data>
+  <data name="&gt;&gt;Recipe_Download_Status_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Recipe_Download_Status_Label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Recipe_Download_Status_Label.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Tumbler_Download_Status_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="Tumbler_Download_Status_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Tumbler_Download_Status_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 328</value>
+  </data>
+  <data name="Tumbler_Download_Status_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 18</value>
+  </data>
+  <data name="Tumbler_Download_Status_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>216</value>
+  </data>
+  <data name="Tumbler_Download_Status_Label.Text" xml:space="preserve">
+    <value>Tumbler Download status</value>
+  </data>
+  <data name="Tumbler_Download_Status_Label.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;Tumbler_Download_Status_Label.Name" xml:space="preserve">
+    <value>Tumbler_Download_Status_Label</value>
+  </data>
+  <data name="&gt;&gt;Tumbler_Download_Status_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Tumbler_Download_Status_Label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Tumbler_Download_Status_Label.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ComboBox5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="ComboBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 621</value>
+  </data>
+  <data name="ComboBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 26</value>
+  </data>
+  <data name="ComboBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>215</value>
+  </data>
+  <data name="&gt;&gt;ComboBox5.Name" xml:space="preserve">
+    <value>ComboBox5</value>
+  </data>
+  <data name="&gt;&gt;ComboBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBox5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ComboBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="ComboBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 648</value>
+  </data>
+  <data name="ComboBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 26</value>
+  </data>
+  <data name="ComboBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>207</value>
+  </data>
+  <data name="&gt;&gt;ComboBox4.Name" xml:space="preserve">
+    <value>ComboBox4</value>
+  </data>
+  <data name="&gt;&gt;ComboBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBox4.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="MainMenuButton8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="MainMenuButton8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MainMenuButton8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 892</value>
+  </data>
+  <data name="MainMenuButton8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 50</value>
+  </data>
+  <data name="MainMenuButton8.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="MainMenuButton8.Text" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="MainMenuButton8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;MainMenuButton8.Name" xml:space="preserve">
+    <value>MainMenuButton8</value>
+  </data>
+  <data name="&gt;&gt;MainMenuButton8.Type" xml:space="preserve">
+    <value>MfgControl.AdvancedHMI.MainMenuButton, CompX, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MainMenuButton8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MainMenuButton8.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="Settings_MainMenuButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Settings_MainMenuButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Settings_MainMenuButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 892</value>
+  </data>
+  <data name="Settings_MainMenuButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 50</value>
+  </data>
+  <data name="Settings_MainMenuButton.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="Settings_MainMenuButton.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;Settings_MainMenuButton.Name" xml:space="preserve">
+    <value>Settings_MainMenuButton</value>
+  </data>
+  <data name="&gt;&gt;Settings_MainMenuButton.Type" xml:space="preserve">
+    <value>MfgControl.AdvancedHMI.MainMenuButton, CompX, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Settings_MainMenuButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Settings_MainMenuButton.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="StartupForm_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="StartupForm_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="StartupForm_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, -210</value>
+  </data>
+  <data name="StartupForm_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 47</value>
+  </data>
+  <data name="StartupForm_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="StartupForm_btn.Text" xml:space="preserve">
+    <value>Startup Form</value>
+  </data>
+  <data name="&gt;&gt;StartupForm_btn.Name" xml:space="preserve">
+    <value>StartupForm_btn</value>
+  </data>
+  <data name="&gt;&gt;StartupForm_btn.Type" xml:space="preserve">
+    <value>MfgControl.AdvancedHMI.MainMenuButton, CompX, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;StartupForm_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StartupForm_btn.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>Manual</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_Timer.Name" xml:space="preserve">
+    <value>MainMenu_Timer</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_Timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EthernetIPforCLXCom1.Name" xml:space="preserve">
+    <value>EthernetIPforCLXCom1</value>
+  </data>
+  <data name="&gt;&gt;EthernetIPforCLXCom1.Type" xml:space="preserve">
+    <value>AdvancedHMIDrivers.EthernetIPforCLXCom, AdvancedHMIDrivers, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Permission_Timer.Name" xml:space="preserve">
+    <value>Permission_Timer</value>
+  </data>
+  <data name="&gt;&gt;Permission_Timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Modify_Access_Timer.Name" xml:space="preserve">
+    <value>Modify_Access_Timer</value>
+  </data>
+  <data name="&gt;&gt;Modify_Access_Timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Marker_DataSubscriber.Name" xml:space="preserve">
+    <value>Marker_DataSubscriber</value>
+  </data>
+  <data name="&gt;&gt;Marker_DataSubscriber.Type" xml:space="preserve">
+    <value>AdvancedHMIControls.DataSubscriber2, AdvancedHMIControls, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Recipe_DataSubscriber.Name" xml:space="preserve">
+    <value>Recipe_DataSubscriber</value>
+  </data>
+  <data name="&gt;&gt;Recipe_DataSubscriber.Type" xml:space="preserve">
+    <value>AdvancedHMIControls.DataSubscriber2, AdvancedHMIControls, Version=3.9.9.24, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;NclRecipeDataSet1.Name" xml:space="preserve">
+    <value>NclRecipeDataSet1</value>
+  </data>
+  <data name="&gt;&gt;NclRecipeDataSet1.Type" xml:space="preserve">
+    <value>MfgControl.AdvancedHMI.NCLRecipeDataSet, NCLRecipeDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="NclRecipeDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>862, 17</value>
+  </metadata>
+</root>

@@ -1,0 +1,63 @@
+﻿'Private EP As OfficeOpenXml.ExcelPackage
+''* Transfer List Box contents to the PLC
+'Private Sub XferListToCLX()
+'    EthernetIPforCLXCom1.IPAddress = TextBox1.Text
+'    '* NOTE : We must write strings 1 at a time because more than 4 strings will exceed the packet limit and fail
+'    Try
+'        For i = 0 To ListBox1.Items.Count - 1
+'            '* Send it to the PLC
+'            EthernetIPforCLXCom1.Write(TagNameTextBox.Text & "[" & i & "]", CStr(ListBox1.Items(i)))
+'        Next
+
+'        MsgBox("Successfully Written " & ListBox1.Items.Count & " items")
+'    Catch ex As Exception
+'        MsgBox(ex.Message)
+'    End Try
+'End Sub
+''******************************************************************
+''* Copied from example
+''* Read the cells in the spreadsheet and put them in the List Box
+''******************************************************************
+'Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+'    '* Was a file name specified?
+'    If Not String.IsNullOrEmpty(ExcelFileTextBox.Text) Then
+'        '* Does the file exist?
+'        If System.IO.File.Exists(ExcelFileTextBox.Text) Then
+'            '* Set up an object to read the file
+'            Dim sr As New System.IO.FileInfo(ExcelFileTextBox.Text)
+'            EP = New OfficeOpenXml.ExcelPackage(sr)
+
+'            ListBox1.Items.Clear()
+'            Dim xlrow As Integer
+'            Dim xlCol As Integer
+'            '* Read each row and put in the List Box
+'            For RowNumber = CInt(xlrow) To (CInt(xlrow) + CInt(xlrow) - 1)
+'                Dim v As String = EP.Workbook.Worksheets(1).Cells(xlCol & RowNumber).Value
+'                If Not String.IsNullOrEmpty(v) Then
+'                    ListBox1.Items.Add(EP.Workbook.Worksheets(1).Cells(xlCol & RowNumber).Value)
+'                End If
+'            Next
+'        Else
+'            MsgBox("Excel File Does Not Exist")
+'        End If
+'    Else
+'        MsgBox("Excel file cannot be empty")
+'    End If
+'End Sub
+
+''* Copied from example
+''* Transfer the List Box contents to the PLC
+'Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+'    EthernetIPforCLXCom1.IPAddress = TextBox1.Text
+'    '* NOTE : We must write strings 1 at a time because more than 4 strings will exceed the packet limit and fail
+'    Try
+'        For i = 0 To ListBox1.Items.Count - 1
+'            '* Send it to the PLC
+'            EthernetIPforCLXCom1.Write(TagNameTextBox.Text & "[" & i & "]", CStr(ListBox1.Items(i)))
+'        Next
+
+'        MsgBox("Successfully Written " & ListBox1.Items.Count & " items")
+'    Catch ex As Exception
+'        MsgBox(ex.Message)
+'    End Try
+'End Sub

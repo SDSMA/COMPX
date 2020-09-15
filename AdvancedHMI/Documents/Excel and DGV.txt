@@ -1,0 +1,56 @@
+﻿http://vb.net-informations.com/datagridview/vb.net_datagridview_database.htm
+
+delete row in DGV with mouse click
+http://vb.net-informations.com/datagridview/gridviewdelete.htm
+http://vb.net-informations.com/datagridview/gridviewdelete.htm
+
+
+Imports System.Data.SqlClient
+Public Class Form1
+    Dim sCommand As SqlCommand
+    Dim sAdapter As SqlDataAdapter
+    Dim sBuilder As SqlCommandBuilder
+    Dim sDs As DataSet
+    Dim sTable As DataTable
+
+    Private Sub load_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles load_btn.Click
+        Dim connectionString As String = "Data Source=.;Initial Catalog=pubs;Integrated Security=True"
+        Dim sql As String = "SELECT * FROM Stores"
+        Dim connection As New SqlConnection(connectionString)
+        connection.Open()
+        sCommand = New SqlCommand(sql, connection)
+        sAdapter = New SqlDataAdapter(sCommand)
+        sBuilder = New SqlCommandBuilder(sAdapter)
+        sDs = New DataSet()
+        sAdapter.Fill(sDs, "Stores")
+        sTable = sDs.Tables("Stores")
+        connection.Close()
+        DataGridView1.DataSource = sDs.Tables("Stores")
+        DataGridView1.ReadOnly = True
+        save_btn.Enabled = False
+        DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+
+    End Sub
+
+    Private Sub new_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles new_btn.Click
+        DataGridView1.[ReadOnly] = False
+        save_btn.Enabled = True
+        new_btn.Enabled = False
+        delete_btn.Enabled = False
+    End Sub
+
+    Private Sub delete_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles delete_btn.Click
+        If MessageBox.Show("Do you want to delete this row ?", "Delete", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+            DataGridView1.Rows.RemoveAt(DataGridView1.SelectedRows(0).Index)
+            sAdapter.Update(sTable)
+        End If
+    End Sub
+
+    Private Sub save_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles save_btn.Click
+        sAdapter.Update(sTable)
+        DataGridView1.[ReadOnly] = True
+        save_btn.Enabled = False
+        new_btn.Enabled = True
+        delete_btn.Enabled = True
+    End Sub
+End Class

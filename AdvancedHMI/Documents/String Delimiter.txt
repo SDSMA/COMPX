@@ -1,0 +1,200 @@
+split function supports delimiters within text qualifiers (i.e. ignores them!).
+Place code on a form. Place a listvew control on the form. Set up view style as "details".
+
+You will need to write a sub to call previewfile using the following parameters:
+
+ByRef lv As ListView (listview name), 
+ByVal FileName As String (delimited file name), 
+ByVal Delimiter As String (delimiter character), 
+ByVal Qualifier As String (qualifier character), 
+ByVal IgnoreLines As Integer (number of lines to ignore at beginning)
+An Example:
+Dim MySplitLine As Collection
+
+MyString = "1,""My Text"",5061,""Some more, text."",839"
+MySplitLine = SplitDelimitedLine(MyString, ",", """")
+This example would return 5 sections.
+1
+My Text
+5061
+Some more, text.
+839
+
+http://www.freevbcode.com/ShowCode.asp?ID=4938
+
+Imports System.IO
+
+Public Class frmMyForm
+    Inherits System.Windows.Forms.Form
+
+    Private Function SplitDelimitedLine(ByVal CurrentLine As String, ByVal Delimiter As String, ByVal Qualifier As String) As Collection
+
+        Dim i As Integer
+        Dim SplitString As New Collection()
+        Dim CountDelimiter As Boolean
+        Dim Total As Integer
+        Dim Ch As Char
+        Dim Section As String
+
+        ' We want to count the delimiter unless it is within the text qualifier
+        CountDelimiter = True
+        Total = 0
+        Section = ""
+
+        For i = 1 To Len(CurrentLine)
+
+            Ch = Mid(CurrentLine, i, 1)
+            Select Case Ch
+
+                Case Qualifier
+                    If CountDelimiter Then
+                        CountDelimiter = False
+                    Else
+                        CountDelimiter = True
+                    End If
+
+                Case Delimiter
+                    If CountDelimiter Then
+
+                        ' Add current section to collection
+                        SplitString.Add(New MySection(Section))
+
+                        Section = ""
+                        Total = Total + 1
+
+                    End If
+
+                Case Else
+
+                    Section = Section & Ch
+
+            End Select
+
+
+        Next
+
+        ' Get the last field - as most files will not have an ending delimiter
+        If CountDelimiter Then
+
+            ' Add current section to collection
+            SplitString.Add(New MySection(Section))
+
+        End If
+
+
+        SplitDelimitedLine = SplitString
+
+
+    End Function
+
+
+    Private Sub PreviewFile(ByRef lv As ListView, ByVal FileName As String, ByVal Delimiter As String, ByVal Qualifier As String, ByVal IgnoreLines As Integer)
+
+        Dim ts As StreamReader
+        Dim CurrentLine As String
+        Dim SampleLines(7) As String
+        Dim i As Integer
+        Dim j As Integer
+        Dim MaxCols As Integer
+        Dim SeparatedLine As Collection
+        Dim section As MySection
+
+        lv.Columns.Clear()
+        lv.Clear()
+
+        ' Open the file and assign to a streamreader.
+        ts = File.OpenText(FileName)
+
+        ' Set maximum columns to 0
+        MaxCols = 0
+        j = 0
+
+        ' Read only the first 8 lines
+        ' to get a feel for how many columns is needed.
+        For i = 1 To 8 + IgnoreLines
+
+            CurrentLine = ts.ReadLine
+
+            SeparatedLine = SplitDelimitedLine(CurrentLine, Delimiter, Qualifier)
+
+            ' only treat/look at lines past ignore
+            ' lines value...
+            If i > IgnoreLines Then
+
+                ' Keep line for later (data)
+                SampleLines(j) = CurrentLine
+                j = j + 1
+
+                ' now that it's split out, count the columns.
+                ' only keep the maximum value.
+                If MaxCols < SeparatedLine.Count Then
+                    MaxCols = SeparatedLine.Count
+                End If
+
+            End If
+
+        Next
+
+
+
+        ' Add the required number of columns onto the listview
+        For i = 1 To MaxCols
+
+            lv.Columns.Add("Column " & i, 100, HorizontalAlignment.Left)
+
+        Next
+
+
+        ' declare the listview item variables
+        Dim oitem As ListViewItem
+        Dim ositem As ListViewItem.ListViewSubItem
+
+
+        ' Now add the data
+        For i = 0 To 7
+
+            If SampleLines(i) <> "" Then
+
+                SeparatedLine = SplitDelimitedLine(SampleLines(i), Delimiter, Qualifier)
+
+                For j = 1 To SeparatedLine.Count
+
+                    section = CType(SeparatedLine(j), MySection)
+
+                    If j = 1 Then
+
+                        oitem = New ListViewItem(section.Section)
+
+                    Else
+
+                        ositem = New ListViewItem.ListViewSubItem()
+                        ositem.Text = section.Section
+                        oitem.SubItems.Add(ositem)
+
+                    End If
+
+                Next
+                lv.Items.Add(oitem)
+
+            End If
+
+        Next
+
+        ' close the file
+        ts.Close()
+        section = Nothing
+
+    End Sub
+
+
+
+End Class
+
+Public Class MySection
+
+    Public Section As String
+    Sub New(ByVal newName As String)
+        Section = newName
+    End Sub
+
+End Class

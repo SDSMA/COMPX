@@ -1,0 +1,611 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ChartDataGridReadOnly" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Key_Series" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Key Series</Value>
+    </Setting>
+    <Setting Name="Work_File_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Work File Path</Value>
+    </Setting>
+    <Setting Name="WorkFile_CurrentRow" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Active</Value>
+    </Setting>
+    <Setting Name="Key_No" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Key No</Value>
+    </Setting>
+    <Setting Name="Key_Code" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Tumbler Code</Value>
+    </Setting>
+    <Setting Name="WorkFile_RowCount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Total</Value>
+    </Setting>
+    <Setting Name="Keyfile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Keyfile</Value>
+    </Setting>
+    <Setting Name="Key_MK_Code" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MK Code</Value>
+    </Setting>
+    <Setting Name="Key_Desc" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Key Desc</Value>
+    </Setting>
+    <Setting Name="Key_Assigned_To" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Assigned To</Value>
+    </Setting>
+    <Setting Name="Key_Date" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Key Date</Value>
+    </Setting>
+    <Setting Name="Key_File_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Key File Path</Value>
+    </Setting>
+    <Setting Name="DatabaseFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NCLRecipe.mdb</Value>
+    </Setting>
+    <Setting Name="Recipe_Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Recipe Name</Value>
+    </Setting>
+    <Setting Name="Lock_Family" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Lock_Family</Value>
+    </Setting>
+    <Setting Name="Company_Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Company_Name 
+</Value>
+    </Setting>
+    <Setting Name="R_Date" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Date</Value>
+    </Setting>
+    <Setting Name="Tool_ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Tool_ID</Value>
+    </Setting>
+    <Setting Name="Sta_1_Load_Keys" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 1 Load_Keys
+</Value>
+    </Setting>
+    <Setting Name="Sta_1_Keyed" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 1 Keyed</Value>
+    </Setting>
+    <Setting Name="Sta_1_Unload" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 1 Unload
+</Value>
+    </Setting>
+    <Setting Name="Sta_2_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 2 Enable
+</Value>
+    </Setting>
+    <Setting Name="Sta_3_Part_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 3 Part
+</Value>
+    </Setting>
+    <Setting Name="Sta_4_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 4 Enable
+</Value>
+    </Setting>
+    <Setting Name="Sta_5_Part_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 5 Part
+</Value>
+    </Setting>
+    <Setting Name="Sta_5_Vert_Height" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 5 Vert Ht
+</Value>
+    </Setting>
+    <Setting Name="Sta_6_Part_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 6 Part
+</Value>
+    </Setting>
+    <Setting Name="Sta_7_Part_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 7 Part
+</Value>
+    </Setting>
+    <Setting Name="Sta_8_Part_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 8 Part
+</Value>
+    </Setting>
+    <Setting Name="Sta_9_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 9 Enable
+</Value>
+    </Setting>
+    <Setting Name="Sta_9_Tool" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 9 Tool
+</Value>
+    </Setting>
+    <Setting Name="Sta_10_Part_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 10 Part
+</Value>
+    </Setting>
+    <Setting Name="Sta_11_Part_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 11 Part
+</Value>
+    </Setting>
+    <Setting Name="Sta_12_Part_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 12 Part
+</Value>
+    </Setting>
+    <Setting Name="Sta_13_Part_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 13 Part Number
+</Value>
+    </Setting>
+    <Setting Name="Sta_13_Tool" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 13 Tool
+</Value>
+    </Setting>
+    <Setting Name="Sta_14_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 14 Enable
+</Value>
+    </Setting>
+    <Setting Name="Sta_14_Tool" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 14 Tool
+</Value>
+    </Setting>
+    <Setting Name="Sta_15_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 15 Enable
+</Value>
+    </Setting>
+    <Setting Name="Sta_15_Insert_Angle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Insert</Value>
+    </Setting>
+    <Setting Name="Sta_15_Test_Angle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Test</Value>
+    </Setting>
+    <Setting Name="Sta_15_Tool" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 15 Tool
+</Value>
+    </Setting>
+    <Setting Name="Sta_16_Part_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 16 Part</Value>
+    </Setting>
+    <Setting Name="Sta_16_Back_Support" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 16 Back Support
+</Value>
+    </Setting>
+    <Setting Name="Sta_17_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 17 Enable
+</Value>
+    </Setting>
+    <Setting Name="Sta_13_Gripper" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta13 Gripper</Value>
+    </Setting>
+    <Setting Name="Sta_13_Orient" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta13 Orient</Value>
+    </Setting>
+    <Setting Name="Sta_13_ShotPin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta13 Shotpin</Value>
+    </Setting>
+    <Setting Name="Sta_13_Place" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta13 Place</Value>
+    </Setting>
+    <Setting Name="Sta_13_ReClockPos" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta13 ReclockPos</Value>
+    </Setting>
+    <Setting Name="Sta_13_ReClockRot" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta13 ReclockRot</Value>
+    </Setting>
+    <Setting Name="Bushing_Tooling_Code" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Spring1_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sp 1</Value>
+    </Setting>
+    <Setting Name="Barrel_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Barrel Bowl</Value>
+    </Setting>
+    <Setting Name="Barrel_Orient" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Barrel Orient</Value>
+    </Setting>
+    <Setting Name="Knurl_Pin_Tooling_Code" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Knurl_Pin_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 16 Bowl</Value>
+    </Setting>
+    <Setting Name="Spring2_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sp 2</Value>
+    </Setting>
+    <Setting Name="Spring3_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sp 3</Value>
+    </Setting>
+    <Setting Name="Spring4_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sp 4</Value>
+    </Setting>
+    <Setting Name="Spring5_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sp 5</Value>
+    </Setting>
+    <Setting Name="Spring6_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sp 6</Value>
+    </Setting>
+    <Setting Name="Spring7_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sp 7</Value>
+    </Setting>
+    <Setting Name="Spring8_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Spring_Tumbler_Kit" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Top_Tumbler_Kit" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mid_Tumbler_Kit" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Spring1_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Spring2_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Spring3_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Spring4_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Spring5_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Spring6_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Spring7_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Spring8_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Top1_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Top2_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Top3_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Top4_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Top5_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Top6_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Top7_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Top8_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mid1_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mid2_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mid3_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mid4_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mid5_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mid6_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mid7_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mid8_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Bot1_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Bot2_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Bot3_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Bot4_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Bot5_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Bot6_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Bot7_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Bot8_Tumbler_Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PLC_IP_Address" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"10.1.100.102"</Value>
+    </Setting>
+    <Setting Name="Marker_1_BaudRate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Marker_1_PortName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM1</Value>
+    </Setting>
+    <Setting Name="Marker_1_Length" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="Marker_1_StopBits" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Marker_1_Parity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Marker_2_BaudRate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2400</Value>
+    </Setting>
+    <Setting Name="Marker_2_PortName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM2</Value>
+    </Setting>
+    <Setting Name="Marker_2_Length" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="Marker_2_Parity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Marker_2_StopBits" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Sta_15_Finish_Angle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Finish</Value>
+    </Setting>
+    <Setting Name="Sta_15_Leave_Key" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 15 Leave Key</Value>
+    </Setting>
+    <Setting Name="Sta_14_Mark_Top" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 14 Mark Top</Value>
+    </Setting>
+    <Setting Name="Sta_17_Mark_Side" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 17 Mark Side</Value>
+    </Setting>
+    <Setting Name="Master_Key_Scenario" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Master Key</Value>
+    </Setting>
+    <Setting Name="Sta_5_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 5 Enable</Value>
+    </Setting>
+    <Setting Name="Sta_6_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 6 Enable</Value>
+    </Setting>
+    <Setting Name="Sta_7_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 7 Enable</Value>
+    </Setting>
+    <Setting Name="Sta_8_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 8 Enable</Value>
+    </Setting>
+    <Setting Name="Sta_10_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Sta_11_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Sta_12_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Sta_13_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Sta_3_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 3 Enable</Value>
+    </Setting>
+    <Setting Name="Sta_16_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sta 16 Enable</Value>
+    </Setting>
+    <Setting Name="Top1_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T 1</Value>
+    </Setting>
+    <Setting Name="Top2_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T 2</Value>
+    </Setting>
+    <Setting Name="Top3_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T 3</Value>
+    </Setting>
+    <Setting Name="Top4_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T 4</Value>
+    </Setting>
+    <Setting Name="Top5_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T 5</Value>
+    </Setting>
+    <Setting Name="Top6_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T 6</Value>
+    </Setting>
+    <Setting Name="Top7_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T 7</Value>
+    </Setting>
+    <Setting Name="Top8_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T 8</Value>
+    </Setting>
+    <Setting Name="Bot1_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B 1</Value>
+    </Setting>
+    <Setting Name="Bot2_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B 2</Value>
+    </Setting>
+    <Setting Name="Bot3_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B 3</Value>
+    </Setting>
+    <Setting Name="Bot4_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B 4</Value>
+    </Setting>
+    <Setting Name="Bot5_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B 5</Value>
+    </Setting>
+    <Setting Name="Bot6_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B 6</Value>
+    </Setting>
+    <Setting Name="Bot7_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B 7</Value>
+    </Setting>
+    <Setting Name="Bot8_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mid1_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">M 1</Value>
+    </Setting>
+    <Setting Name="Mid2_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">M 2</Value>
+    </Setting>
+    <Setting Name="Mid3_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">M 3</Value>
+    </Setting>
+    <Setting Name="Mid4_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">M 4</Value>
+    </Setting>
+    <Setting Name="Mid5_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">M 5</Value>
+    </Setting>
+    <Setting Name="Mid6_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">M 6</Value>
+    </Setting>
+    <Setting Name="Mid7_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">M 7</Value>
+    </Setting>
+    <Setting Name="Mid8_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Stepped_1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">St 1</Value>
+    </Setting>
+    <Setting Name="Stepped_2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">St 2</Value>
+    </Setting>
+    <Setting Name="Stepped_3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">St 3</Value>
+    </Setting>
+    <Setting Name="Stepped_4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">St 4</Value>
+    </Setting>
+    <Setting Name="Stepped_5" Type="System.String" Scope="User">
+      <Value Profile="(Default)">St 5</Value>
+    </Setting>
+    <Setting Name="Stepped_6" Type="System.String" Scope="User">
+      <Value Profile="(Default)">St 6</Value>
+    </Setting>
+    <Setting Name="Stepped_7" Type="System.String" Scope="User">
+      <Value Profile="(Default)">St 7</Value>
+    </Setting>
+    <Setting Name="PLC_IP_Timeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="Bot_Tumbler_Kit" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Stepped_8" Type="System.String" Scope="User">
+      <Value Profile="(Default)">St 8</Value>
+    </Setting>
+    <Setting Name="Marker_1_ProgNum" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Marker_2_ProgNum" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Marker_1_ReadTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="Marker_2_ReadTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="Marker_1_WriteTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="Marker_2_WriteTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="Ini_FilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ini FIle path</Value>
+    </Setting>
+    <Setting Name="Event_Log_Filepath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Event log filepath</Value>
+    </Setting>
+    <Setting Name="NCLRecipeConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\CompX\Recipe\NCLRecipe.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\CompX\Recipe\NCLRecipe.mdb</Value>
+    </Setting>
+    <Setting Name="Marker_1_VarNum" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Marker_2_VarNum" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SerialPort_BreakTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">234</Value>
+    </Setting>
+    <Setting Name="SerialPort_BreakCounts" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="Marker_1_ProgramUpload" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Marker_2_ProgramUpload" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Key_Qty" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Stepped7_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Stepped6_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Stepped5_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Stepped4_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Stepped3_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Stepped2_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Stepped1_Bowl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Recipe_OK" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Marker_1_OK" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Marker_2_OK" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="KeyFile_OK" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FullAccess" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Edit_OK" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Machine_Idle" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Machine_Operating" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PLC_Comms_Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

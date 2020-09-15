@@ -1,0 +1,181 @@
+https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.excel.xlfileformat?view=excel-pia
+
+XlFileFormat Enum
+Definition
+Namespace:
+Microsoft.Office.Interop.Excel
+Assembly:
+Microsoft.Office.Interop.Excel.dll
+Specifies the file format when saving the spreadsheet.
+
+C++
+
+Copy
+public enum class XlFileFormat
+Inheritance
+EnumXlFileFormat
+Fields
+xlAddIn	18	
+Microsoft Office Excel Add-In.
+
+xlAddIn8	18	
+Microsoft Excel 97-2003 Add-In
+
+xlCSV	6	
+Comma separated value.
+
+xlCSVMac	22	
+Comma separated value.
+
+xlCSVMSDOS	24	
+Comma separated value.
+
+xlCSVWindows	23	
+Comma separated value.
+
+xlCurrentPlatformText	-4158	
+Specifies a type of text format
+
+xlDBF2	7	
+Dbase 2 format.
+
+xlDBF3	8	
+Dbase 3 format.
+
+xlDBF4	11	
+Dbase 4 format.
+
+xlDIF	9	
+Data Interchange format.
+
+xlExcel12	50	
+Excel12
+
+xlExcel2	16	
+Excel version 2.0.
+
+xlExcel2FarEast	27	
+Excel version 2.0 far east.
+
+xlExcel3	29	
+Excel version 3.0.
+
+xlExcel4	33	
+Excel version 4.0.
+
+xlExcel4Workbook	35	
+Excel version 4.0. Workbook format.
+
+xlExcel5	39	
+Excel version 5.0.
+
+xlExcel7	39	
+Excel 95.
+
+xlExcel8	56	
+Excel8
+
+xlExcel9795	43	
+Excel version 95 and 97.
+
+xlHtml	44	
+Web page format.
+
+xlIntlAddIn	26	
+Microsoft Office Excel Add-In international format.
+
+xlIntlMacro	25	
+Deprecated format.
+
+xlOpenDocumentSpreadsheet	60	
+OpenDocument Spreadsheet
+
+xlOpenXMLAddIn	55	
+Open XML Add-In
+
+xlOpenXMLStrictWorkbook	61	
+Strict Open XML file
+
+xlOpenXMLTemplate	54	
+Open XML Template
+
+xlOpenXMLTemplateMacroEnabled	53	
+Open XML Template Macro Enabled
+
+xlOpenXMLWorkbook	51	
+Open XML Workbook
+
+xlOpenXMLWorkbookMacroEnabled	52	
+Open XML Workbook Macro Enabled
+
+xlSYLK	2	
+Symbolic link format.
+
+xlTemplate	17	
+Excel template format.
+
+xlTemplate8	17	
+Template 8
+
+xlTextMac	19	
+Specifies a type of text format.
+
+xlTextMSDOS	21	
+Specifies a type of text format.
+
+xlTextPrinter	36	
+Specifies a type of text format.
+
+xlTextWindows	20	
+Specifies a type of text format.
+
+xlUnicodeText	42	
+Specifies a type of text format.
+
+xlWebArchive	45	
+MHT format.
+
+xlWJ2WD1	14	
+Deprecated format.
+
+xlWJ3	40	
+Deprecated format.
+
+xlWJ3FJ3	41	
+Deprecated format.
+
+xlWK1	5	
+Lotus 1-2-3 format.
+
+xlWK1ALL	31	
+Lotus 1-2-3 format.
+
+xlWK1FMT	30	
+Lotus 1-2-3 format.
+
+xlWK3	15	
+Lotus 1-2-3 format.
+
+xlWK3FM3	32	
+Lotus 1-2-3 format.
+
+xlWK4	38	
+Lotus 1-2-3 format.
+
+xlWKS	4	
+Lotus 1-2-3 format.
+
+xlWorkbookDefault	51	
+Workbook default
+
+xlWorkbookNormal	-4143	
+Excel workbook format.
+
+xlWorks2FarEast	28	
+Microsoft Works 2.0 format
+
+xlWQ1	34	
+Quattro Pro format.
+
+xlXMLSpreadsheet	46	
+Excel Spreadsheet format.

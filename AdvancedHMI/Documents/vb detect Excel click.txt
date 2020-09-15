@@ -1,0 +1,19 @@
+﻿    '=============================================================================
+    ''Detect Excel Cell click, Or Double click, Or ^ click
+    ''Edwin Thompson Edwin Thompson Jul 20, 2016 12:40 PM (in response to Edwin Thompson)
+    ''note the ByRef In the Sub Declaration).
+    '=============================================================================
+
+    ''Detect Excel Cell click, Or Double click, Or ^ click
+    ''In the basic declarations
+    'Dim ExcelBeforeDoubleClick As Microsoft.Office.Interop.Excel.DocEvents_BeforeDoubleClickEventHandler
+    ''Detect Excel Cell click, Or Double click, Or ^ click
+    ''In the load form
+    'ExcelBeforeDoubleClick = New Microsoft.Office.Interop.Excel.DocEvents_BeforeDoubleClickEventHandler_
+    'AddressOf DoubleClickCell)
+    'AddHandler() oSheet.BeforeDoubleClick, ExcelBeforeDoubleClick
+
+    ''In the Sub
+    'Private Sub DoubleClickCell(ByVal Target As Microsoft.Office.Interop.Excel.Range, ByRef cancel As Boolean)
+    '    'Debug.Print("Cells " + Target.Address + " Double Clicked")      
+    'End Sub
