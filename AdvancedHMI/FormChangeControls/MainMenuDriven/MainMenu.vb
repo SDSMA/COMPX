@@ -162,10 +162,10 @@ Public Class MainMenu
                             myForms.Name = "Springs_Form" Or
                             myForms.Name = "KnurlPin_Form" Then
 
-                            ComboBox3.Items.Add(myForms.Name)
-                            ComboBox4.Items.Add(myForms)
-                        End If
+                        ComboBox3.Items.Add(myForms.Name)
+                        ComboBox4.Items.Add(myForms)
                     End If
+                End If
             Next
         Catch ex As Exception
             Console.WriteLine(ex.Message)
@@ -613,16 +613,10 @@ Public Class MainMenu
             M_Seq(MarkerNumber).PrintFinished = False
             ' Reset PLC signals
             Try
-                'If PLC_Sta14_Print_Error Then
-                EthernetIPforCLXCom1.Write("Sta14_Print_Error", 0)
-                'End If
-                'If PLC_Sta14_Print_Done Then
-                EthernetIPforCLXCom1.Write("Sta14_Print_Done", 0)
-                'End If
-                'If PLC_Sta14_Print_Data_Sent Then
-                EthernetIPforCLXCom1.Write("sta14_print_data_sent", 0)
-                'End If
 
+                EthernetIPforCLXCom1.Write("Sta14_Print_Error", 0)
+                EthernetIPforCLXCom1.Write("Sta14_Print_Done", 0)
+                EthernetIPforCLXCom1.Write("sta14_print_data_sent", 0)
                 EthernetIPforCLXCom1.Write("Sta14_send_data_fault", 0)
 
                 Marker_1_Button.BackColor = SystemColors.Control
@@ -660,7 +654,8 @@ Public Class MainMenu
         ' Wait for PLC Print Command
         '===================================================
         Dim x As Integer = -1
-        Dim cmdArmMarker = Chr(27) & Chr(5) & " " & "1" & Chr(13) & Chr(27) & Chr(7) & Chr(13)
+        Dim cmdArmMarker = Chr(27) & Chr(5) & " " & "1" & Chr(13)
+        Dim cmdStartMark = Chr(27) & Chr(7) & Chr(13)
         Dim y As String = ""
 
         If M_Seq(MarkerNumber).CurrentState = "Wait for Print" Then
@@ -672,13 +667,20 @@ Public Class MainMenu
             If PLC_Sta14_Print_Start Then
                 ' Arm Marker
                 ' Wait for Marker armed (response = X)
-                y = Marker_1_SendData(cmdArmMarker, "X")
+                y = Marker_1_SendData(cmdArmMarker + cmdStartMark, "X" & vbCr & "Y" & vbCr, True)
                 x = y.IndexOf("X")
                 M_Seq(MarkerNumber).PrintFinished = y.IndexOf("Y") > -1
             End If
 
             If x >= 0 Then
                 M_Seq(MarkerNumber).NextState = "Printing"
+                'Wait for Go command
+                If (Not M_Seq(MarkerNumber).PrintFinished) Then
+                    y = Marker_1_ComPort.ReadExisting()
+                    M_Seq(MarkerNumber).PrintFinished = y.IndexOf("Y") > -1
+                Else
+                    EthernetIPforCLXCom1.Write("sta14_Print_Done", 1)
+                End If
             End If
 
         End If
@@ -691,37 +693,41 @@ Public Class MainMenu
         ' ===================================================
         If M_Seq(MarkerNumber).CurrentState = "Printing" Then
 
-            EthernetIPforCLXCom1.Write("sta14_Print_Data_Sent", 0)
+            If (PLC_Sta14_Print_Data_Sent) Then
+                EthernetIPforCLXCom1.Write("sta14_Print_Data_Sent", 0)
+            End If
 
             'Change state
             ' wait for Marking done (Marker sends Y)
-            M_Seq(MarkerNumber).PrintFinished = M_Seq(MarkerNumber).PrintFinished Or Marker_1_ComPort.ReadExisting().IndexOf("Y") > -1
-
-            If M_Seq(MarkerNumber).PrintFinished Then
-                Try
-                    ' Set StaXX_Print_Done
-                    EthernetIPforCLXCom1.Write("sta14_Print_Done", 1)
-                    'Marker_1_Button.BackColor = Color.Green
-                    PLC_Comms_OK = True
-                Catch
-                    EthernetComErrorCount += EthernetComErrorCount
-                    Markers_Form.Marker_1_Seq_Log_TextBox.AppendText(vbCrLf & "PLC Comm Error")
-
-                    Marker_1_Button.BackColor = Color.Yellow
-                    Marker_1_Button.Text = "PLC Comm Error"
-                    PLC_Comms_OK = False
-                End Try
-
-                M_Seq(MarkerNumber).NextState = "End"
-                M_Seq(MarkerNumber).CurrentState = "End"
+            If (Not M_Seq(MarkerNumber).PrintFinished) Then
+                M_Seq(MarkerNumber).PrintFinished = M_Seq(MarkerNumber).PrintFinished Or Marker_1_ComPort.ReadExisting().IndexOf("Y") > -1
             End If
 
-        End If
+            If M_Seq(MarkerNumber).PrintFinished Then
+                    Try
+                        ' Set StaXX_Print_Done
+                        EthernetIPforCLXCom1.Write("sta14_Print_Done", 1)
+                        'Marker_1_Button.BackColor = Color.Green
+                        PLC_Comms_OK = True
+                    Catch
+                        EthernetComErrorCount += EthernetComErrorCount
+                        Markers_Form.Marker_1_Seq_Log_TextBox.AppendText(vbCrLf & "PLC Comm Error")
 
-        ' ===================================================
-        ' Step End        
-        ' ===================================================
-        If M_Seq(MarkerNumber).CurrentState = "End" Then
+                        Marker_1_Button.BackColor = Color.Yellow
+                        Marker_1_Button.Text = "PLC Comm Error"
+                        PLC_Comms_OK = False
+                    End Try
+
+                    M_Seq(MarkerNumber).NextState = "End"
+                    M_Seq(MarkerNumber).CurrentState = "End"
+                End If
+
+            End If
+
+            ' ===================================================
+            ' Step End        
+            ' ===================================================
+            If M_Seq(MarkerNumber).CurrentState = "End" Then
             ' No Action
 
             'Change state
@@ -842,10 +848,11 @@ Public Class MainMenu
         'Initialize
         '===================================================
         If M_Seq(MarkerNumber).CurrentState = "Init" Then
-
+            M_Seq(MarkerNumber).PrintFinished = False
             ' Reset PLC signals
             Try
                 EthernetIPforCLXCom1.Write("Sta17_Print_Error", 0)
+                'EthernetIPforCLXCom1.Write("Sta17_Print_Start", 0)
                 EthernetIPforCLXCom1.Write("Sta17_Print_Done", 0)
                 EthernetIPforCLXCom1.Write("Sta17_Print_Data_Sent", 0)
 
@@ -892,24 +899,35 @@ Public Class MainMenu
         ' Wait for PLC Print Command
         '===================================================
         Dim x As Integer = -1
-        Dim cmdArmMarker = Chr(27) & Chr(5) & " " & "1" & Chr(13) & Chr(27) & Chr(7) & Chr(13)
+        Dim cmdArmMarker = Chr(27) & Chr(5) & " " & "1" & Chr(13)
+        Dim cmdStartMark = Chr(27) & Chr(7) & Chr(13)
         Dim y As String = ""
 
         If M_Seq(MarkerNumber).CurrentState = "Wait for Print" Then
             Wait_Message_Form.Close()
 
-            EthernetIPforCLXCom1.Write("Sta17_print_data_sent", 1)
+            If (Not PLC_Sta17_Print_Data_Sent) Then
+                EthernetIPforCLXCom1.Write("Sta17_print_data_sent", 1)
+            End If
 
             ' wait for PLC to repeat back Print command
             If PLC_Sta17_Print_Start Then
                 ' Arm Marker
                 ' Wait for Marker armed (response = X)
-                y = Marker_2_SendData(cmdArmMarker, "X")
+                y = Marker_2_SendData(cmdArmMarker + cmdStartMark, "X" & vbCr & "Y" & vbCr, True)
                 x = y.IndexOf("X")
+                M_Seq(MarkerNumber).PrintFinished = y.IndexOf("Y") > -1
             End If
 
             If x >= 0 Then
                 M_Seq(MarkerNumber).NextState = "Printing"
+                'Wait for Go command
+                If (Not M_Seq(MarkerNumber).PrintFinished) Then
+                    y = Marker_2_ComPort.ReadExisting()
+                    M_Seq(MarkerNumber).PrintFinished = y.IndexOf("Y") > -1
+                Else
+                    EthernetIPforCLXCom1.Write("Sta17_Print_Done", 1)
+                End If
             End If
         End If
 
@@ -919,18 +937,23 @@ Public Class MainMenu
         ' Wait for Printing Done from Marker
         ' Then Send Print Done to PLC
         ' ===================================================
-        If M_Seq(MarkerNumber).CurrentState = "Printing" Then
+        If M_Seq(MarkerNumber).CurrentState = "Printing" Or M_Seq(MarkerNumber).NextState = "Printing" And M_Seq(MarkerNumber).PrintFinished Then
 
-            EthernetIPforCLXCom1.Write("Sta17_Print_Data_Sent", 0)
+            If (PLC_Sta17_Print_Data_Sent) Then
+                EthernetIPforCLXCom1.Write("Sta17_Print_Data_Sent", 0)
+            End If
 
             'Change state
             ' wait for Marking done (Marker sends Y)
-            x = Marker_2_ComPort.ReadExisting().IndexOf("Y")
+            If (Not M_Seq(MarkerNumber).PrintFinished) Then
+                x = Marker_2_ComPort.ReadExisting().IndexOf("Y")
+            End If
 
-            If x >= 0 Then
+            If M_Seq(MarkerNumber).PrintFinished Then
                 Try
                     ' Set StaXX_Print_Done
                     EthernetIPforCLXCom1.Write("Sta17_Print_Done", 1)
+
                     'Marker_2_Button.BackColor = Color.Green
                     PLC_Comms_OK = True
                 Catch
@@ -968,7 +991,7 @@ Public Class MainMenu
             End If
         End If
 
-        Markers_Form.Marker_2_Seq_Log_TextBox.AppendText(vbCrLf & M_Seq(MarkerNumber).CurrentState)
+        'Markers_Form.Marker_2_Seq_Log_TextBox.AppendText(vbCrLf & M_Seq(MarkerNumber).CurrentState)
         Marker_2_Button.Text = M_Seq(MarkerNumber).CurrentState
         Markers_Form.Marker_2_State_TextBox.Text = Marker_2_Button.Text
 
@@ -1215,7 +1238,7 @@ Public Class MainMenu
         If Sta17_Start_Print_BasicLabel.Text = "True" Then
             MainMenu_Timer.Stop()
             'PLC_Sta17_Print_Start = True
-            Marker_2_Control()
+            'Marker_2_Control() 'TYLER
             MainMenu_Timer.Start()
         End If
     End Sub

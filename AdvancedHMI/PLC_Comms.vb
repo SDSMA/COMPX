@@ -219,6 +219,7 @@ Public Module PLC_Interface
         PLC_list.Add(New KeyValuePair(Of String, String)("A_17_Recipe_Leave_key_in_After_Test", My.Settings.Sta_15_Leave_Key))
         PLC_list.Add(New KeyValuePair(Of String, String)("A_18_Recipe_Enable_Sta16", My.Settings.Sta_16_Enable))
         PLC_list.Add(New KeyValuePair(Of String, String)("A_19_Recipe_Mark_Side_of_Barrel", My.Settings.Sta_17_Enable))
+        PLC_list.Add(New KeyValuePair(Of String, String)("Sta17_Mark_Orient", CInt(My.Settings.Barrel_Orient)))
         PLC_list.Add(New KeyValuePair(Of String, String)("A_20_Recipe_Use_Master_Key_Scenario", My.Settings.Master_Key_Scenario))
         PLC_list.Add(New KeyValuePair(Of String, String)("A_21_Recipe_KeyTest_Finish_Angle", My.Settings.Sta_15_Finish_Angle))
         PLC_list.Add(New KeyValuePair(Of String, String)("A_22_Recipe_KeyTest_Start_Angle", My.Settings.Sta_15_Insert_Angle))
@@ -366,7 +367,7 @@ Public Module PLC_Interface
         PLC_list.Add(New KeyValuePair(Of String, String)("A_Sta06_SpringCode_Digit_6", My.Settings.Spring6_Bowl))
         PLC_list.Add(New KeyValuePair(Of String, String)("A_Sta06_SpringCode_Digit_7", My.Settings.Spring7_Bowl))
 
-        'PLC_list.Add(New KeyValuePair(Of String, String)("A_24_Recipe_Batch_Quantity", My.Settings.Key_Qty))
+        PLC_list.Add(New KeyValuePair(Of String, String)("A_24_Recipe_Batch_Quantity", My.Settings.Key_Qty))
         'PLC_list.Add(New KeyValuePair(Of String, String)("A_25_Recipe_Batch_Key_Que", 0))
 
         '===================================================

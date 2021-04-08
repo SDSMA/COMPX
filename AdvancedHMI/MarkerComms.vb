@@ -115,6 +115,12 @@ Public Module MarkerComms
             MyReader.TextFieldType = Microsoft.VisualBasic.FileIO.FieldType.Delimited
             MyReader.Delimiters = New String() {vbTab, ","}
 
+            'clear previous program
+            Dim i As Integer = 0
+            For i = 0 To Marker_2_Program.Length - 1
+                Marker_2_Program(i) = Nothing
+            Next
+
             Dim currentRow As String()
             'Loop through all fields in the file. 
             'If any lines are corrupt, report an error and continue parsing. 
@@ -143,6 +149,12 @@ Public Module MarkerComms
 
             MyReader.TextFieldType = Microsoft.VisualBasic.FileIO.FieldType.Delimited
             MyReader.Delimiters = New String() {vbTab, ","}
+
+            'clear previous program
+            Dim i As Integer = 0
+            For i = 0 To Marker_2_Program.Length - 1
+                Marker_2_Program(i) = Nothing
+            Next
 
             Dim currentRow As String()
             'Loop through all fields in the file. 
@@ -235,6 +247,8 @@ Public Module MarkerComms
             End If
         Next
 
+        Threading.Thread.Sleep(1000)
+
         Dim x = Marker_1_VerifyProgram()
         If x Then
             Markers_Form.Marker_1_VerifyProgram_Button.Text = "Marker 1 program loaded"
@@ -261,10 +275,17 @@ Public Module MarkerComms
             'If Marker_2_Program(i) <> "" Then
             If Not IsNothing(Marker_2_Program(i)) Then
                 'download commands from the list
-                Marker_2_SendData(Esc & Marker_2_Program(i) & cr, "")
+                If (i = Marker_2_Program.Length - 1) Then
+                    Marker_2_SendData(Esc & Marker_2_Program(i) & cr, "RT0")
+                Else
+                    Marker_2_SendData(Esc & Marker_2_Program(i) & cr, "")
+                End If
+
                 Threading.Thread.Sleep(10)
-            End If
+                End If
         Next
+
+        Threading.Thread.Sleep(1000)
 
         Dim x = Marker_2_VerifyProgram()
         If x Then
@@ -349,7 +370,7 @@ Public Module MarkerComms
         Dim response As Boolean = False
         Try
             If Marker_2_ComPort.IsOpen Then
-                msg = Marker_1_ComPort.PortName & " is open"
+                msg = Marker_2_ComPort.PortName & " is open"
             Else
                 Marker_2_ComPort.PortName = My.Settings.Marker_2_PortName
                 Marker_2_ComPort.BaudRate = My.Settings.Marker_2_BaudRate
@@ -364,12 +385,12 @@ Public Module MarkerComms
                 System.Windows.Forms.Application.DoEvents()
                 Threading.Thread.Sleep(500)
 
-                msg = Marker_1_ComPort.PortName & " opened"
+                msg = Marker_2_ComPort.PortName & " opened"
             End If
 
             Marker_2_Update_Buttons()
         Catch ex As Exception
-            msg = Marker_1_ComPort.PortName & " exception"
+            msg = Marker_2_ComPort.PortName & " exception"
             'MessageBox.Show(String.Format(msg & vbCrLf & "{0}", ex.Message))
             response = False
         End Try
@@ -1304,7 +1325,7 @@ Marker_2_DownloadProgram:
     ' =====================================================
     ' Marker Write Serial Port 
     ' =====================================================
-    Function Marker_1_SendData(ByVal data As String, Optional ByVal expectedresponse As String = Nothing) As String
+    Function Marker_1_SendData(ByVal data As String, Optional ByVal expectedresponse As String = Nothing, Optional force As Boolean = False) As String
         ' https://docs.microsoft.com/en-us/dotnet/visual-basic/developing-apps/programming/computer-resources/how-to-send-strings-to-serial-ports
         ' https://docs.microsoft.com/en-us/dotnet/visual-basic/developing-apps/programming/computer-resources/how-to-receive-strings-from-serial-ports
         ' https://www.xanthium.in/serial-port-programming-visual-basic-dotnet-for-embedded-developers
@@ -1340,11 +1361,11 @@ Marker_2_DownloadProgram:
             End If
 
         End If
-            'flush old commm data
-            'Marker_1_ComPort.DiscardInBuffer()
-            'Marker_1_ComPort.DiscardOutBuffer()
+        'flush old commm data
+        'Marker_1_ComPort.DiscardInBuffer()
+        'Marker_1_ComPort.DiscardOutBuffer()
 
-            Try
+        Try
             'Marker_1_ComPort.WriteLine(data)
             Marker_1_ComPort.DiscardInBuffer() ''TYLER
             Marker_1_ComPort.Write(data)
@@ -1378,13 +1399,18 @@ Marker_2_DownloadProgram:
                     ' add to all received thus far
                     returnStr = returnStr & Incoming
 
+                    ' if got return string, exit
+                    If (returnStr = expectedresponse Or returnStr = expectedresponse & vbCr) Then
+                        Exit Do
+                    End If
+
                     ' if we received something earlier, and now we get nothing, we must have gotten all there was
-                    If Incoming = "" And returnStr <> "" And x > 7 Then
+                    If Incoming = "" And returnStr <> "" And ((x > 7 And Not force) Or x > 100) Then
                         Exit Do
                     End If
 
                     ' if, after several tries, we still don't have anything, ... punt
-                    If returnStr = Nothing And (x > 7) Then
+                    If returnStr = Nothing And (x > 10) Then
                         returnStr = "-1"
                         Exit Do
                     End If
@@ -1408,7 +1434,7 @@ Marker_2_DownloadProgram:
     ' =====================================================
     ' Marker Write Serial Port 
     ' =====================================================
-    Function Marker_2_SendData(ByVal data As String, Optional ByVal expectedresponse As String = Nothing) As String
+    Function Marker_2_SendData(ByVal data As String, Optional ByVal expectedresponse As String = Nothing, Optional force As Boolean = False) As String
 
         ' https://docs.microsoft.com/en-us/dotnet/visual-basic/developing-apps/programming/computer-resources/how-to-send-strings-to-serial-ports
         ' https://docs.microsoft.com/en-us/dotnet/visual-basic/developing-apps/programming/computer-resources/how-to-receive-strings-from-serial-ports
@@ -1483,8 +1509,13 @@ Marker_2_DownloadProgram:
                     ' add to all received thus far
                     returnStr = returnStr & Incoming
 
+                    ' if got return string, exit
+                    If (returnStr = expectedresponse Or returnStr = expectedresponse & vbCr) Then
+                        Exit Do
+                    End If
+
                     ' if we received something earlier, and now we get nothing, we must have gotten all there was
-                    If Incoming = "" And returnStr <> "" And x > 7 Then
+                    If Incoming = "" And returnStr <> "" And ((x > 7 And Not force) Or x > 100) Then
                         Exit Do
                     End If
 

@@ -380,10 +380,14 @@ Public Class Keyfile_Select_Form
 
                             ' Get any existing data from all rows, first 7 columns
                             DataGridView1.Rows.Add(WorkFile_RowCount)
+                            DataGridView1.Enabled = False
+                            DataGridView1.Visible = False
+                            DataGridView1.AutoSize = False
+
                             For i As Integer = 0 To WorkFile_RowCount - 1
 
                                 If colnum_Series >= 0 Then
-                                    DataGridView1.Rows(i).Cells("Series").Value = xlworksheet.Cells(i + 2, colnum_Series + 1).value
+                                    DataGridView1.Rows(i).Cells("Series").Value = xlworksheet.Cells(i + 2, colnum_Series + 1).Value
                                 End If
 
                                 If colnum_KeyNo >= 0 Then
@@ -410,8 +414,14 @@ Public Class Keyfile_Select_Form
                                     DataGridView1.Rows(i).Cells("AssignedTo").Value = xlworksheet.Cells(i + 2, colnum_Date + 1).value
                                 End If
 
-                                WorkFileMessage(caption, "Row :" & vbTab & i)
+                                If (i Mod 5 = 0) Then
+                                    WorkFileMessage(caption, "Row :" & vbTab & i)
+                                End If
                             Next
+
+                            DataGridView1.Enabled = True
+                            DataGridView1.Visible = True
+                            DataGridView1.AutoSize = True
 
                             WorkFileMessage(caption, "Row :" & vbTab & (WorkFile_RowCount - 1))
 
@@ -866,6 +876,10 @@ CleanUp:
             ' Copy from Work File to DGV
             Dim i As Integer = 0
 
+            DataGridView1.Enabled = False
+            DataGridView1.Visible = False
+            DataGridView1.AutoSize = False
+
             Do Until IsNothing(xlworksheet.Cells(i + 2, 1).value) Or
                     CStr(xlworksheet.Cells(i + 2, 1).value) = ""
 
@@ -885,11 +899,20 @@ CleanUp:
 
                         Wait_Message_Form.Refresh()
                     End If
-
-                    CatchUp()
                 Next
                 i += 1
+
+                If (i Mod 10 = 0) Then
+                    CatchUp()
+                End If
             Loop
+
+            DataGridView1.Enabled = True
+            DataGridView1.Visible = True
+            DataGridView1.AutoSize = True
+
+            CatchUp()
+
             WorkFile_RowCount = i
             DataGridView1.Update()
             DataGridView1.Refresh()
@@ -1023,7 +1046,6 @@ CleanUp:
                     Try
                         Wait_Message_Form.Refresh()
                         'let everyone catch up
-                        CatchUp()
                     Catch
                     End Try
                 Next
